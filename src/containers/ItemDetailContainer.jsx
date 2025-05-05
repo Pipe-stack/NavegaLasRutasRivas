@@ -12,7 +12,7 @@ export default function ItemDetailContainer() {
   useEffect(() => {
     getProducts()
       .then((data) => {
-        const found = data.find((p) => p.id === Number(productId)); // ✅ clave
+        const found = data.find((p) => p.id === Number(productId)); 
         setProduct(found);
         setLoading(false);
       })
